@@ -12,12 +12,25 @@ html {
 
 /*----------------------------- INDEX --------------------------------*/
 header {
-  background-color: white;
   font-size: 20px;
   font-family: "Roboto", sans-serif;
   text-transform: capitalize;
   position: fixed !important;
   z-index: 1;
+}
+
+h2 {
+  text-align: center;
+}
+
+.filosofia {
+  background-color: rgb(243, 239, 239);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.container-fluid {
+  padding-bottom: 20px;
 }
 
 /*----------------------- BARRA DE NAVEGACION --------------------------------*/
@@ -45,6 +58,10 @@ header {
   font-weight: bold;
 }
 
+.col-md-4 {
+  text-align: center;
+}
+
 /*----------------------- JUMBOTRON --------------------------------*/
 .jumbotron {
   background-size: cover;
@@ -61,7 +78,8 @@ header {
 }
 
 .col-md-6 {
-  min-height: 35vh;
+  min-height: 40vh;
+  padding-left: 30px;
 }
 
 /*----------------------- FOOTER --------------------------------*/
@@ -98,11 +116,6 @@ footer i {
 }
 
 /*------------------------------------------ MI FILOSOFIA -------------------------------------------------*/
-.mi-filosofia {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-}
 .mi-filosofia iframe {
   width: 960px;
   height: 615px;
@@ -137,6 +150,16 @@ p {
   border: 0;
 }
 
+.texto-icono {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.titulo-icono {
+  font-size: 20px;
+  font-weight: normal;
+}
+
 /*---------------------------------------------- CONTACTO -------------------------------------------------*/
 form {
   position: relative;
@@ -160,6 +183,12 @@ form select {
   width: 30%;
   padding: 5px;
   font-family: "Roboto", sans-serif;
+}
+
+iframe {
+  position: relative;
+  top: 100px;
+  margin: 20px;
 }
 
 /*----------------------------------------- RECETAS--------------------------------------*/
@@ -233,6 +262,8 @@ img {
 }
 
 img.img-fluid {
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
   max-height: fit-content;
   width: 650vh;
 }
@@ -263,6 +294,4 @@ img.img-fluid {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-}
-
-/*# sourceMappingURL=estilos.css.map */
+}/*# sourceMappingURL=estilos.css.map */

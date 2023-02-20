@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
 
 // variables
-$color1: rgb(165, 113, 98); 
+$color1: rgb(165, 113, 98);
 $color2: rgb(181, 180, 180);
 $color3: rgb(152, 142, 142);
 $color4: rgb(87, 84, 84);
 $color5: rgb(154, 126, 89);
+$color6: rgb(243, 239, 239);
 
 
 * {
@@ -21,12 +22,27 @@ html {
 /*----------------------------- INDEX --------------------------------*/
 
 header {
-    background-color: white;
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
     text-transform: capitalize;
     position: fixed !important;
     z-index: 1;
+}
+
+h2{
+    text-align: center;
+    // padding-top: 30px;
+    // padding-bottom: 30px;
+}
+
+.filosofia{
+    background-color: $color6;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.container-fluid{
+    padding-bottom: 20px;
 }
 
 /*----------------------- BARRA DE NAVEGACION --------------------------------*/
@@ -55,12 +71,19 @@ header {
     font-weight: bold;
 }
 
+.col-md-4{
+    text-align: center;
+}
+
     /*----------------------- JUMBOTRON --------------------------------*/
 
 .jumbotron {
     background-size: cover;
     background-position: center;
     height: 700px;
+    // background-image: ./;
+    // background: rgb(250,248,237);
+    // background: radial-gradient(circle, rgba(250,248,237,1) 0%, rgba(218,203,187,1) 84%);
 
     h1{
         margin-top: 200px;
@@ -70,10 +93,11 @@ header {
 
 .jumbotron-heading{
     margin-top: 100px;
-} 
+}
 
 .col-md-6 {
-    min-height: 35vh;
+    min-height: 40vh;
+    padding-left: 30px;
 }
 
     /*----------------------- FOOTER --------------------------------*/
@@ -114,16 +138,11 @@ footer i {
 
 /*------------------------------------------ MI FILOSOFIA -------------------------------------------------*/
 
-.mi-filosofia {
-    display: flex;
-    justify-content: center;
-    margin: auto;
-
-    iframe {
+.mi-filosofia iframe {
         width: 960px;
         height: 615px;
     }
-}
+
 
 .video-container {
     width: 80%;
@@ -138,12 +157,12 @@ footer i {
 
 .info{
     margin-bottom: 150px;
+    // padding: 50px;
 }
 
 p{
     font-size: 18px;
 }
-
 
 .responsive-video iframe {
     position: absolute;
@@ -153,6 +172,16 @@ p{
     width: 100%;
     height: 400px;
     border: 0;
+}
+
+.texto-icono{
+    font-size: 16px;
+    font-weight: normal;
+}  
+
+.titulo-icono{
+    font-size: 20px;
+    font-weight: normal;
 }
 
 /*---------------------------------------------- CONTACTO -------------------------------------------------*/
@@ -177,11 +206,19 @@ form {
         margin-bottom: 15px;
     }
 
-    select {
+    select{
         width: 30%;
         padding: 5px;
         font-family: 'Roboto', sans-serif;
     }
+}
+
+// // ultimo agregado: posición del mapa
+
+iframe{
+    position: relative;
+    top: 100px;
+    margin: 20px;
 }
 
 /*----------------------------------------- RECETAS--------------------------------------*/
