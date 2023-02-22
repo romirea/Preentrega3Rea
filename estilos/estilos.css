@@ -271,5 +271,5 @@ img.img-fluid {
 }
 
 .align-right {
-  margin-left: -80%;
+  margin-left: -100% !important;
 }/*# sourceMappingURL=estilos.css.map */
