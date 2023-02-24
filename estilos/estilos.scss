@@ -1,13 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
 
-// variables
-$color1: rgb(165, 113, 98);
-$color2: rgb(181, 180, 180);
-$color3: rgb(152, 142, 142);
-$color4: rgb(87, 84, 84);
-$color5: rgb(154, 126, 89);
-$color6: rgb(243, 239, 239);
-
+@import "_colores";
 
 * {
     margin: 0;
